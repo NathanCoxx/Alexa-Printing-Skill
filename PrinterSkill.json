@@ -1,0 +1,80 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rasp printer",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PiPing",
+                    "slots": [
+                        {
+                            "name": "info",
+                            "type": "word"
+                        }
+                    ],
+                    "samples": [
+                        "PiPing to print {info}"
+                    ]
+                },
+                {
+                    "name": "start",
+                    "slots": [
+                        {
+                            "name": "info",
+                            "type": "word"
+                        }
+                    ],
+                    "samples": [
+                        "print {info}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "word",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "josh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "print"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "resume"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "today"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
